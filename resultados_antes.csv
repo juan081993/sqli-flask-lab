@@ -1,0 +1,10 @@
+prueba,http,veredicto,evidencia
+Login legítimo (control),200,ACCESO CONCEDIDO,El servidor otorgó sesión
+Login con credenciales falsas (control),401,ACCESO DENEGADO,El servidor rechazó la petición
+Bypass: OR '1'='1',200,ACCESO CONCEDIDO,El servidor otorgó sesión
+Bypass: admin'--,200,ACCESO CONCEDIDO,El servidor otorgó sesión
+Detección: comilla simple,500,ERROR SQL EXPUESTO,El servidor reveló un error del motor
+Búsqueda legítima (control),200,1 FILA(S),Resultado normal / entrada tratada como texto
+Extracción: dump de todos los productos,200,4 FILA(S),Devolvió más registros de los esperados (inyección exitosa)
+Extracción UNION: usuarios y contraseñas,200,DATOS FILTRADOS,Se extrajeron credenciales de la tabla users
+Extracción UNION: esquema de la BD,200,DATOS FILTRADOS,Se enumeraron tablas de la BD

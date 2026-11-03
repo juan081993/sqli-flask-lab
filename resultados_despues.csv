@@ -1,0 +1,10 @@
+prueba,http,veredicto,evidencia
+Login legítimo (control),200,ACCESO CONCEDIDO,El servidor otorgó sesión
+Login con credenciales falsas (control),401,ACCESO DENEGADO,El servidor rechazó la petición
+Bypass: OR '1'='1',401,ACCESO DENEGADO,El servidor rechazó la petición
+Bypass: admin'--,401,ACCESO DENEGADO,El servidor rechazó la petición
+Detección: comilla simple,401,ACCESO DENEGADO,El servidor rechazó la petición
+Búsqueda legítima (control),200,1 FILA(S),Resultado normal / entrada tratada como texto
+Extracción: dump de todos los productos,200,0 FILA(S),Resultado normal / entrada tratada como texto
+Extracción UNION: usuarios y contraseñas,400,0 FILA(S),Resultado normal / entrada tratada como texto
+Extracción UNION: esquema de la BD,400,0 FILA(S),Resultado normal / entrada tratada como texto
