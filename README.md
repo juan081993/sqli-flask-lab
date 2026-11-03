@@ -46,4 +46,11 @@ python ataque_sql_i.py --url http://127.0.0.1:5001 --etiqueta DESPUES
 
 ## Autores
 
-Completar con los integrantes del grupo.
+- Diego Armando Ayala Armijos
+- Lizbeth Verónica Casco Bastidas
+- Marcello Radamés Cordero Torrealba
+- Jennifer Ariana Farias Rojas
+- Juan Carlos Pillasagua Alcívar
+- Wilson Javier Quishpe Toaquiza
+- Griselda Coraima Rúa Bailón
+
